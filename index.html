@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Soft Linen Diary</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Linen Diary">
+    <meta name="theme-color" content="#f9f7f2">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3652/3652191.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              linen: {
+                bg: '#f9f7f2',
+                card: '#ffffff',
+                accent: '#8d775f',
+                darkBg: '#1a1614',
+                darkCard: '#2a2420'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+            background-color: #f9f7f2;
+            color: #4a4a4a;
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .dark body {
+            background-color: #1a1614;
+            color: #e5e1da;
+        }
+        
+        .linen-bg { background-color: #f9f7f2; }
+        .linen-accent { color: #8d775f; }
+        .linen-btn { background-color: #8d775f; color: white; }
+        .linen-btn:hover { background-color: #7a6651; }
+        
+        .linen-card { 
+            background-color: white; 
+            border-radius: 1rem; 
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); 
+        }
+        .dark .linen-card {
+            background-color: #2a2420;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+            border-color: #3a342e;
+        }
+        
+        /* 스크롤바 숨기기 */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* 애니메이션 */
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-in { animation: fadeIn 0.3s ease-out forwards; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

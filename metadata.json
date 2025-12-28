@@ -1,0 +1,7 @@
+{
+  "name": "Soft Linen Diary",
+  "description": "A sentimental daily journal and todo app with date-specific data management and security features.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
