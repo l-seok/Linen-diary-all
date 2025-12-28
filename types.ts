@@ -1,3 +1,4 @@
+
 export type Mood = 'happy' | 'neutral' | 'sad' | 'angry' | 'excited' | '';
 
 export interface TodoItem {
@@ -11,7 +12,7 @@ export interface DailyData {
   todo: TodoItem[];
   diary: string;
   mood: Mood;
-  photos: string[]; // Base64 strings array
+  photos: string[]; // Base64 이미지 배열
 }
 
 export interface AppState {

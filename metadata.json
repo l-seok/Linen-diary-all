@@ -1,6 +1,7 @@
+
 {
   "name": "Soft Linen Diary",
-  "description": "A sentimental daily journal and todo app with date-specific data management and security features.",
+  "description": "소중한 일상과 할 일을 기록하는 감성 다이어리",
   "requestFramePermissions": [
     "camera"
   ]
