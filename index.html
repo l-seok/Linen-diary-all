@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -38,6 +39,7 @@
             color: #4a4a4a;
             -webkit-tap-highlight-color: transparent;
             transition: background-color 0.3s ease, color 0.3s ease;
+            margin: 0;
         }
         .dark body {
             background-color: #1a1614;
@@ -60,11 +62,9 @@
             border-color: #3a342e;
         }
         
-        /* 스크롤바 숨기기 */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-        /* 애니메이션 */
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .animate-in { animation: fadeIn 0.3s ease-out forwards; }
     </style>
@@ -84,6 +84,7 @@
 </head>
 <body>
     <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
+    <!-- 이 스크립트 태그가 앱을 실행시키는 핵심입니다 -->
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
