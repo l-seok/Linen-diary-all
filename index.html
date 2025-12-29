@@ -84,8 +84,17 @@
 </head>
 <body>
     <div id="root"></div>
-    <!-- 상대 경로 ./index.tsx 로 수정하여 로컬 서버에서 더 잘 인식되게 합니다 -->
     <script type="module" src="./index.tsx"></script>
+    <script>
+      // 서비스 워커 등록 코드 추가
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW registered'))
+            .catch(err => console.log('SW registration failed', err));
+        });
+      }
+    </script>
 <script type="module" src="/index.tsx"></script>
 </body>
 </html>

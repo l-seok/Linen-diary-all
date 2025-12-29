@@ -1,9 +1,12 @@
+
 {
   "name": "Soft Linen Diary",
   "short_name": "리넨 일기",
   "description": "소중한 일상과 할 일을 기록하는 감성 다이어리",
-  "start_url": "./",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#f9f7f2",
   "theme_color": "#8d775f",
   "icons": [
