@@ -84,7 +84,8 @@
 </head>
 <body>
     <div id="root"></div>
-    <!-- 이 스크립트 태그가 앱을 실행시키는 핵심입니다 -->
-    <script type="module" src="/index.tsx"></script>
+    <!-- 상대 경로 ./index.tsx 로 수정하여 로컬 서버에서 더 잘 인식되게 합니다 -->
+    <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
 </body>
 </html>
